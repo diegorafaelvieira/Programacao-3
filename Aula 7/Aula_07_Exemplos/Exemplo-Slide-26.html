@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="UTF-8">
+	<script>
+		function jedi(n, s, p) {
+			this.nome = n;
+			this.sobrenome = s;
+			this.poder = p;
+
+			this.mudarNome = function (novoNome) {
+				this.nome = novoNome;
+			}
+		}
+
+		var j1 = new jedi("No name", "Secura", 88);
+		console.log(j1.nome + " " + j1.sobrenome);
+
+		j1.mudarNome("Aayla");
+		console.log(j1.nome + " " + j1.sobrenome);
+
+	</script>
+</head>
+<body>
+	<h1>Exemplo de adição de métodos</h1>
+	<p>Veja o resultado com no Console.</p>
+</body>
+</html>

@@ -1,0 +1,59 @@
+body {
+	margin: 0;
+}
+
+#topo {
+	width: auto;
+	height: 55px;
+	background-color: orange;
+}
+
+#menu {
+	float: left;
+	width: 300px;
+	height: auto;
+	margin-left: 5px;
+	/*line-h */ 
+}
+
+#menu li {
+	list-style: none;
+	color: black;
+	
+}
+
+#menu li:a hover{
+	color: red;
+
+}
+
+.table th,td {
+	border: 1px solid;
+	border-collapse: collapse;
+	text-align: center;
+	padding: 20px;
+	margin: 50px;
+}
+
+td.titulo {
+	background-color: lightgreen;
+}
+
+td.horarios {
+	background-color: lightsalmon;
+}
+
+td.dia {
+	background-color: lightskyblue;
+}
+
+h1 {
+	margin-left: 10px;
+	color:red;
+}
+
+p {
+	margin-left: 10px;
+}
+
+

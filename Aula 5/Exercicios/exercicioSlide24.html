@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Exercicio Slide 24</title>
+
+</head>
+
+<body>
+
+    <script>
+        function valor(val) {
+
+
+            switch (val) {
+                case 0:
+                    document.getElementById("id").innerHTML = "ZERO";
+                    break;
+
+                case 1:
+                    document.getElementById("id").innerHTML = "UM";
+                    break;
+
+                case 2:
+                    document.getElementById("id").innerHTML = "DOIS";
+                    break;
+
+                case 3:
+                    document.getElementById("id").innerHTML = "TRÊS";
+                    break;
+
+                default:
+                document.getElementById("id").innerHTML = "INVÁLIDO";
+                    break;
+            }
+
+        }
+
+        document.getElementById("val").innerHTML = valor;
+
+    </script>
+    <button onclick="valor(2)">Clique Aqui</button>
+    <p id="id">Resultado é...</p>
+</body>
+
+</html>

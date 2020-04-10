@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Exercicio 5</title>
+
+</head>
+
+<body>
+    <script>
+        function graus() {
+            var c = 0; f = 0; texto = "<ul>";
+
+            while (c <= 100) {
+                let f = (c * (9 / 5)) + 32;
+                texto += "<li>" + c + "º Celsius é igual a " + f + "º Fahrenheit!" + "</li>";
+                c++;
+            }
+
+            texto += "</ul>";
+            document.getElementById("resultado").innerHTML = texto;
+        }
+    
+    </script>
+
+
+    <button onclick="graus()" id="btnClique">Clique</button>
+    <p id="resultado">Resultado aqui...</p>
+
+
+</body>
+
+</html>

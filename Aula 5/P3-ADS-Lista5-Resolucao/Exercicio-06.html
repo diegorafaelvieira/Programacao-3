@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<p id="resultado1"></p>
+	<p id="resultado2"></p>
+	
+	<script>
+		function alterarArray(arrayDeNumeros) {
+			for(var i=0; i<arrayDeNumeros.length; i++) {				
+	        	switch(arrayDeNumeros[i]) {
+					case 1 : arrayDeNumeros[i] = "um"; break;			
+					case 2 : arrayDeNumeros[i] = "dois"; break;
+					case 3 : arrayDeNumeros[i] = "tres"; break;
+					case 4 : arrayDeNumeros[i] = "quatro"; break;
+					case 5 : arrayDeNumeros[i] = "cinco"; break;
+		    	}
+			}		
+		}
+		
+		var array1 = [1,5,3,5];
+		
+		for(var i=0; i<array1.length; i++)
+			document.getElementById("resultado1").innerHTML += " " + array1[i];
+		
+		alterarArray(array1);
+		
+		for(var i=0; i<array1.length; i++)
+			document.getElementById("resultado2").innerHTML += " " + array1[i];
+			
+	</script>
+	
+</body>
+</html>

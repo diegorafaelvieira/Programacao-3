@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<p>Este exemplo chama uma funcao que usa um condicional para escrever Bom Dia ou Boa Noite dependendo do horario.</p>
+	<p id="meuParagrafo"></p>
+
+<script>
+	function testaCondicional() {
+		var mensagem;
+		var data = new Date();
+		var hora = data.getHours();
+		
+    	if ((hora > 6) && (hora < 20)) {
+			mensagem = "Bom dia!";
+		} else {
+			mensagem = "Boa noite!";
+		}
+		
+		return mensagem;
+	}
+
+	document.getElementById("meuParagrafo").innerHTML = testaCondicional();
+</script>
+
+</body>
+</html>

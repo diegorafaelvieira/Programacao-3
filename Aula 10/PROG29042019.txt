@@ -1,0 +1,31 @@
+06/05 - aula EAD
+27/05 - 2ª avaliação (PHP/HTML)
+
+xampp control panel
+
+pasta xampp -> htdocs(cont~em os arquisvos do site)->aula10->ola.php
+http://localhost:8081/aula10/
+
+obs:não usar espaços nos nomes das pastas
+
+concatenação  .
+
+constantes utilizar letras maiuscula
+
+$val1++ (primeiro imprime e depois aumenta)
+++$val1 (primeiro aumenta e depois imprime)
+
+\"  mostra as aspas duplas
+\t  dar um tab
+\n  quebra linha
+
+// Comentario de uma linha
+/* Comentario de
+multiplas
+Linhas */
+
+saber qual utilizar
+GET:
+POST:
+
+

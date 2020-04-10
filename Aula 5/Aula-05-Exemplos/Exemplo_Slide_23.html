@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<p>Este exemplo chama uma funcao que determina o dia usando um switch.</p>
+	<p id="meuParagrafo"></p>
+
+<script>
+	function testaSwitch() {
+		var dia;
+		var data = new Date();
+		
+		switch (data.getDay()) {
+			case 0:
+				dia = "Domingo";
+				break;
+			case 1:
+				dia = "Segunda";
+				break;				
+			case 2:
+				dia = "Terca";
+				break;				
+			case 3:
+				dia = "Quarta";
+				break;				
+			case 4:
+				dia = "Quinta";
+				break;				
+			case 5:
+				dia = "Sexta";
+				break;				
+			case 6:
+				dia = "Sábado";
+				break;
+		}
+				
+		return "Hoje eh " + dia;
+	}
+
+	document.getElementById("meuParagrafo").innerHTML = testaSwitch();
+</script>
+
+</body>
+</html>

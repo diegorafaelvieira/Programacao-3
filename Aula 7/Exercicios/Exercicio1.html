@@ -1,0 +1,37 @@
+<!--
+1.Crie objetos para representar
+a)Uma cidade e seus atributos (nome, estado, pais, número de habitantes)
+b)Uma consulta médica (nome do paciente, nome do médico, CRM do médico, horário)
+c)Um candidato (nome, sobrenome, sigla do partido, número do partido, estado)
+d)Um laboratório (código, número de computadores, se tem ar-condicionado e projetor)
+-->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Exercicio 1</title>
+
+</head>
+
+<body>
+    <script>
+        var cidade = { nome: "Feliz", estado: "RS", pais: "Brasil", nroHab: 20000 };
+        console.log(cidade.nome + " " + cidade.estado + " " + cidade.pais + " " + cidade.nroHab);
+
+
+        var consulta = { nomePaciente: "Pedro de Pacas", nomeMedico: "Dr Chapatin", crm: "CRM-1234", hora: "22:22" };
+        console.log(consulta.nomePaciente + " " + consulta.nomeMedico + " " + consulta.crm + " " + consulta.hora);
+
+        var candidato = {nome: "Olivio", sobrenome: "Dutra", sigla: "PT",numero: 13 , estado: "RS" };
+        console.log(candidato.nome + " " + candidato.sobrenome + " " + candidato.sigla + " " + candidato.numero + " " + candidato.estado);
+
+
+        var lab = {codigo: "D7", numComp: 30, arCond: true, projetor: true};
+        console.log(lab.codigo + " " + lab.numComp + " " + lab.arCond + " " + lab.projetor);
+    </script>
+</body>
+
+</html>

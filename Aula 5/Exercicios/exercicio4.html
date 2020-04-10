@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Exercicio 4</title>
+
+</head>
+
+<body>
+    <script>
+        function votar() {
+            var idade = prompt("Informe a idade:", 0);
+            // Aqui vai o seu código
+            if (idade >= 16 && idade < 18) {
+                return document.getElementById("situacao").innerHTML = "Voto facultativo!";
+            }
+            else if (idade < 18){
+                return document.getElementById("situacao").innerHTML = "Não pode votar!";
+            }
+            else if (idade >= 18 && idade <= 70) {
+                return document.getElementById("situacao").innerHTML = "Voto obrigatório!";
+            }
+            else if (idade > 70) {
+                return document.getElementById("situacao").innerHTML = "Voto facultativo!";
+            }
+            
+            alert("A sua situação para votar eh " + situacao);
+
+        }
+    </script>
+    <button onclick="votar(situacao)">Clique Aqui</button>
+    <p id="situacao">Resultado é...</p>
+</body>
+
+</html>

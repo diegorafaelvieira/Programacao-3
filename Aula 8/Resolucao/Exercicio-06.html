@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="UTF-8">
+	<style>
+		table, th, td {
+			border: solid 1px;
+			border-collapse: collapse;
+			padding: 20px;
+			margin: 50px;
+            text-align: center;
+		}
+
+        td.total {
+            background: lightgray;
+        }
+
+		th {
+			background-color:lightsalmon;
+		}
+	</style>
+</head>
+<body>
+	<h1>Exercicio 6</h1>
+	<table>
+        <tr>
+              <th>Tipo</th>
+              <th>Descrição</th>
+              <th>Valor</th>
+            </tr>
+            <tr>
+              <td rowspan="3">Doméstica</td>
+              <td>Compras mensais</td>
+              <td>$550</td>
+            </tr>
+            <tr>
+              <td>Aluguel</td>
+              <td>$950</td>
+            </tr>
+            <tr>
+                    <td>Luz</td>
+                    <td>$100</td>
+                  </tr>
+
+                  <tr>
+                        <td>Pensão alimentícia</td>
+                        <td colspan="2" rowspan="2">Sem registros</td>
+                  </tr>
+                  <tr>
+                        <td>Judicial</td>
+                  </tr>
+                  <tr>
+                        <td>Viagem</td>
+                        <td>Férias</td>
+                        <td>$2000</td>
+                      </tr>
+                      <tr>
+                            <td class="total" colspan="2">Total</td>
+                            <td>$3600</td>
+                          </tr>
+          </table>
+          
+</body>
+</html>

@@ -1,0 +1,39 @@
+onmouseover : passar o mouse por cima
+
+função é um objeto
+
+Declarativa:igual as outras linguagens
+return é opcional
+
+passagem
+valor: não altera a variavel externa
+referência: altera o valor externo 
+
+
+Anônimas:
+Função anônima: o que tiver bem a direita é o corpo na função    #Usuário digitar
+= exemplo no slide
+function f1 (x,y){
+    return x*y;
+}
+
+
+Literais: a função fica armazenada numa variavel
+var y =  function (x,y) {
+ return x*y;
+}
+
+
+
+undefined = propriedade indefinida
+
+
+delete é igual para propriedade e função
+
+onsubmit = submissão de um formulário
+
+onsubmit="return func1()
+
+cancelar envio = false
+confirmar envio = true
+

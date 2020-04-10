@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Exercicio 3</title>
+
+</head>
+
+<body>
+    <script>
+        function calculoLeao() {
+            var aliquota = 0;
+            var salario = prompt("Informe o seu salario.", 0);
+            // Aqui vai o seu código
+
+            if (salario <= 1787.77) {
+                var aliquota = 0;
+                return document.getElementById("aliquota").innerHTML = "ISENTO";
+                
+            }
+            else if ((salario >= 1787.78) && (salario <= 2679.29)) {
+                var aliquota = 7.5;
+                return document.getElementById("aliquota").innerHTML = "7,5%";
+                
+            } 
+            else if ((salario >= 2679.30) && (salario <= 3572.43)){
+                var aliquota = 15;
+                return document.getElementById("aliquota").innerHTML = "15%";
+                
+            }
+            else if ((salario >= 3572.44) && (salario <= 4463.81)) {
+                var aliquota = 22.5;
+                return document.getElementById("aliquota").innerHTML = "22,5%";
+                
+            } else {
+                var aliquota = 27.5;
+                return document.getElementById("aliquota").innerHTML = "27,5%";
+                
+            }
+            alert("A sua aliquota eh " + aliquota);
+        }
+    </script>
+  
+    <button onclick="calculoLeao(aliquota)">Clique Aqui</button>
+    <p id="aliquota">Resultado é...</p>
+</body>
+
+</html>

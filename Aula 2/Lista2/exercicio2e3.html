@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Exercicio2</title>
+	<style>
+		h1 {
+			font-family: Impact;
+			font-size: 22px;
+			color: red;
+			text-align: center;
+		}
+
+		body {
+			background-color: #408d7c;
+		}
+	</style>
+</head>
+<body>
+	<h1>CADASTRO EMPRESA</h1>
+	<p>
+		<form style="text-align:center">
+			Nome Empresa:          
+			<input style="text-align:center" type="text" placeholder="Nome da Empresa" name="nomeEmpresa"><br/><br/>
+			Nome do Contato:
+			<input style="text-align:center" type="text" placeholder="Nome do Contato" name="nomeContato"><br/><br/>
+			Data de Nascimento:
+			<input style="text-align:center" type="date" placeholder="Data de Nascimento" name="dataNascimento"><br/><br/>
+			Endereço:
+			<input style="text-align:center" type="text" placeholder="Endereço" name="endereco"><br/>
+			<p><label for="cEst" >Estado:</label>
+                        <select name="tEst" id="cEst">
+                            <option value="0">Selecione o Estado</option>
+                            <option value="DF">Distrito Federal</option>
+                            <optgroup label="Norte">
+                                <option value="AM">Amazonas</option>
+                                <option value="RR">Roraima</option>
+                                <option value="AP">Amapá</option>
+                                <option value="PA">Pará</option>
+                                <option value="TO">Tocantins</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="AC">Acre</option>
+                            </optgroup>
+                            <optgroup label="Nordeste">
+                                <option value="MA">Maranhão</option>
+                                <option value="PI">Piauí</option>
+                                <option value="CE">Ceará</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="BA">Bahia</option>
+                            </optgroup>
+                            <optgroup label="Centro-Oeste">
+                                <option value="GO">Goiás</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MT">Mato Grosso</option>
+                            </optgroup>
+                            <optgroup label="Sudeste">
+                                <option value="SP">São Paulo</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="ES">Espirito Santo</option>
+                            </optgroup>
+                            <optgroup label="Sul">
+                                <option value="PR">Paraná</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="SC">Santa Catarina</option>
+                            </optgroup>
+                        </select> </p>
+            <p><label for="cPais" >Pais:</label>
+                        <select name="tPais" id="cPais">
+                            <option value="0">Selecione o País</option>
+                            <option value="BRA">Brasil</option>
+                            <option value="ARG">Argentina</option>
+                            <option value="URU">Uruguai</option>
+                            <option value="CHI">Chile</option>                      
+                            </optgroup> 
+                        </select></p> 
+            Telefone:
+			<input style="text-align:center" type="text" placeholder="Telefone" name="telefone"><br/><br/> 
+			E-mail:
+			<input style="text-align:center" type="email" placeholder="E-mail" name="email"><br/><br/> 
+
+			Deseja ou não receber notícias atualizadas sobre a empresa?<br/>
+			 <input type="radio" name="resp" value="sim" checked> Sim <br/>
+			 <input type="radio" name="resp" value="não" checked> Não <br/><br/>
+
+
+
+			 Comentários:<br/>
+			 <textarea name="message" rows="10" cols="30" readonly="Não apaga">
+				Esse comentário NÃO posso apagar por causa do readonly.
+ 			</textarea><br/><br/>
+			 <input type="submit" value="Enviar">     
+			
+
+		</form>
+
+	</p>
+</body>
+</html>

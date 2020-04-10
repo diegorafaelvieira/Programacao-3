@@ -1,0 +1,26 @@
+JavaScript - roda na máquina do cliente
+		ganhou força atualmente devido ao aumento do processamento nas máquinas dos usuários
+	Orientação a objetos é baseada em protótipos
+	Função é um objeto
+
+HEAD: tenta modificar a página durante o carregamento
+
+BODY:
+obs: é recomendavel utilizar no final 
+
+PHP - roda no servidor
+
+
+NUMBER: número
+STRING: letra
+OBJETC: vetor
+
+Not a Number -> Nan
+
+Prestar atenção nos BOOLEAN, OPERADORES
+
+retorno da funcao dentro de um paragrafo
+
+
+
+

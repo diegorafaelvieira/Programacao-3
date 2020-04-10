@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="UTF-8">
+	<script>
+		// 1(a)
+		var c1 = new Object();
+		c1.nome = "Feliz";
+		c1.estado = "RS";
+		c1.pais = "Brasil";
+		c1.numeroHabitantes = 12000;
+		console.log("\nExercicio 1 (a)");
+		console.log(c1.nome);
+		console.log(c1.estado);
+		console.log(c1.pais);		
+		console.log(c1.numeroHabitantes);	
+
+		
+		// 1(b)
+		var consulta = {
+			paciente:"Jaime",
+			medico:"Qyburn",
+			CRM:123456789,
+			horario:"22:15"
+		};
+		console.log("\nExercicio 1 (b)");
+		console.log(consulta.paciente);
+		console.log(consulta.medico);
+		console.log(consulta.CRM);		
+		console.log(consulta.horario);	
+		
+		
+		// 1(c)
+		function Candidato(nome,sobrenome,sigla,numero,estado) {
+			this.nome = nome;
+			this.sobrenome = sobrenome;
+			this.sigla = sigla;
+			this.numero = numero;
+			this.estado = estado;
+		}
+		
+		var cand1 = new Candidato("Robben","Stark","PWC",99,"RS");
+		console.log("\nExercicio 1 (c)");
+		console.log(cand1.nome);
+		console.log(cand1.sobrenome);
+		console.log(cand1.sigla);		
+		console.log(cand1.numero);
+		console.log(cand1.estado);
+		
+		// 1(d)
+		var lab = {
+			codigo:"D8",
+			numeroComp:32,
+			ar:true
+		};
+		console.log("\nExercicio 1 (d)");
+		console.log(lab.codigo);		
+		console.log(lab.numeroComp);
+		console.log(lab.ar);
+		
+		
+	</script>
+</head>
+<body>
+	<h1>Exercicio 1</h1>
+	<p>Veja o resultado com no Console.</p>
+</body>
+</html>

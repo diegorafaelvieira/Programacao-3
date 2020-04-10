@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<p>Informe um numero entre 1 e 10:</p>
+	<input id="numero" type="text">
+	<button type="button" onclick="minhaFuncao()">Verificar</button>
+	<p id="resultado"></p>
+
+<script>
+	function minhaFuncao() {
+  		
+		//Obtem o valor do campo com id="numero"
+    	var x = document.getElementById("numero").value;
+
+		// Inicialmente, vamos supor que a entrada esta OK.
+		var text = "Entrada OK";
+		
+    	// Se x nao eh um numero ou é menor que 1 ou maior que 10
+		// entao declaramos que a entrada é invalida
+    	if (isNaN(x) || x < 1 || x > 10) {
+        	text = "Entrada invalida!";
+    	}
+
+    	document.getElementById("resultado").innerHTML = text;
+	}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="UTF-8">
+	<script>
+		var c1 = new Object();
+		c1.nome = "Feliz";
+		c1.estado = "RS";
+		c1.pais = "Brasil";
+		c1.numeroHabitantes = 12000;
+		c1.incrementaPopulacao = function (n) {this.numeroHabitantes += n;};
+				
+		console.log(c1.nome + " tem " + c1.numeroHabitantes + " habitantes.");
+		c1.incrementaPopulacao(3000);
+		console.log(c1.nome + " tem " + c1.numeroHabitantes + " habitantes.");
+	</script>
+</head>
+<body>
+	<h1>Exercicio 4</h1>
+	<p>Veja o resultado com no Console.</p>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="UTF-8">
+	<script>
+		function verifica(t) {
+			if(t.length > 2) {
+				console.log("Nome valido.");
+				return true;
+			}
+			
+			console.log("Nome invalido.");
+			return false;
+		}
+	</script>
+</head>
+<body>
+	<h1>Exercicio 2</h1>
+	<form onsubmit="return verifica(this.pnome.value)">
+		<input type="text" name="pnome">
+		<input type="submit" value="OK">
+	</form>
+</body>
+</html>

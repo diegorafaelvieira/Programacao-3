@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="UTF-8">
+	<script>
+	function media(a) {
+		var s = 0;
+		for(e in a) {
+			s += Number(a[e]);
+		} 
+		var m = s / a.length;		
+		return m;
+	}
+
+	var a1 = [29,13,44,35,26,77,88];
+	var r = media(a1);
+	console.log("Media = " + r);
+	</script>
+</head>
+<body>
+	<h1>Exercicio 1(a)</h1>
+	<p>Veja o resultado com no Console.</p>
+</body>
+</html>

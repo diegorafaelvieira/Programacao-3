@@ -1,0 +1,46 @@
+bloco: ocupa toda a linah e força a quebra ex: paragrafo,h1,h2
+<h1>_____________</h1>
+<p>
+
+
+
+</p>
+
+inline: ocupa só um espaço e não faz a quebra de linha. ex:imagem,links
+<p>
+
+<a href = ....>______</a>
+
+</p>
+
+DIV: container para outros elementos.
+ver slides ex:5
+
+padding: preenchimento entre a borda e o texto.(dentro da borda)
+margin: fora da borda
+
+Classes:remete ao CSS
+	
+div.carros   o ponto remete a uma classe chamada carros
+
+iframe: usado como local alvo para abrir um link(abre site dentro de outro)
+
+meta: informações do site
+
+formulário: entrada de dados para interagir com o sistema(cadastro,buscar,....)
+
+placeholder: texto dentro dos inputs
+radio: sempre colocar o mesmo nome
+checkbox: selecionar 1,2,todos ou nenhum
+password: conteúdo na caixa de tezto não é exibido(tratado como o texto no php)
+submit: botão para submeter o que foi inserido
+
+GET: mostra o que inseri nos formularios
+POST: upload de arquivos,senha 
+
+
+
+
+
+
+  

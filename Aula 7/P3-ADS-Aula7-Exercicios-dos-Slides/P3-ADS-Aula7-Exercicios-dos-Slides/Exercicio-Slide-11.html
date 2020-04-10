@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="UTF-8">
+	<script>
+	function triangulo(a,b,c) {
+		if(((a+b)<c) || ((a+c)<b) || ((b+c)<a)) {
+			  console.log("Declarativa: Nao eh triangulo");
+		} else if((a == b) && (b == c)) {
+				console.log("Declarativa: Equilatero");
+		} else if((a != b) && (a != c) && (b != c)) {
+				console.log("Declarativa: Escaleno");
+		} else {
+			  console.log("Declarativa: Isosceles");
+		}
+	}
+
+	triangulo(9,3,5);
+	triangulo(2,3,5);
+	triangulo(2,2,3);
+	triangulo(3,3,3);
+
+
+	var triLiteral = function (a,b,c) {
+		if(((a+b)<c) || ((a+c)<b) || ((b+c)<a)) {
+				console.log("Literal: Nao eh triangulo");
+		} else if((a == b) && (b == c)) {
+				console.log("Literal: Equilatero");
+		} else if((a != b) && (a != c) && (b != c)) {
+				console.log("Literal: Escaleno");
+		} else {
+				console.log("Literal: Isosceles");
+		}
+	}
+
+	triLiteral(11,3,5);
+	triLiteral(2,3,5);
+	triLiteral(2,2,3);
+	triLiteral(3,3,3);
+
+	var triAnonima = new Function("a","b","c",
+		"if(((a+b)<c) || ((a+c)<b) || ((b+c)<a)) {console.log('Anonima: Nao eh triangulo');} else if((a == b) && (b == c)) {console.log('Anonima: Equilatero');} else if((a != b) && (a != c) && (b != c)) {console.log('Anonima: Escaleno');} else {console.log('Anonima: Isosceles');}"
+	);
+	triAnonima(9,3,5);
+	triAnonima(2,3,5);
+	triAnonima(2,2,3);
+	triAnonima(3,3,3);
+
+	</script>
+</head>
+<body>
+	<h1>Exemplo de passagem parâmetros de função</h1>
+	<p>Veja o resultado no Console.</p>
+</body>
+</html>

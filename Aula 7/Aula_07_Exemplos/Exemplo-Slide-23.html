@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="UTF-8">
+	<script>
+		function mostrarObjeto(){
+			var h1 = {nome:"Wolverine", grupo:"XMen"};
+			/* FOR para percorrer propriedades*/
+			for (x in h1) {
+				console.log(x + " - " + h1[x]);
+			}
+		}
+	</script>
+</head>
+<body onload="mostrarObjeto();">
+	<h1>Exemplo de uso de laço para percorrer objeto</h1>
+</body>
+</html>

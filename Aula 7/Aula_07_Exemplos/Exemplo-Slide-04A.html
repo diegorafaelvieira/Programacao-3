@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<h1>Exemplo de evento onclick</h1>
+
+	<button onclick="minhaFuncao()">Informe a hora!</button>
+	<p id="meuParagrafo"></p>
+
+<script>
+	function minhaFuncao() {
+		document.getElementById("meuParagrafo").innerHTML = new Date();
+	}
+</script>
+</body>
+</html>

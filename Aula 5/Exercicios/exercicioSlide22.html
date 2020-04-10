@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Exercicio Slide 22</title>
+
+</head>
+
+<body>
+
+    <script>
+
+        function maior(n1, n2) {
+
+            if (n1 > n2) {
+                return document.getElementById("m").innerHTML = n1;
+            } else if (n1 == n2) {
+                return document.getElementById("m").innerHTML = "iguais";
+            } else {
+                return document.getElementById("m").innerHTML = n2;
+            }
+        }
+
+
+
+    </script>
+    <button onclick="maior(10,5)">Clique Aqui</button>
+    <p id="m">Resultado é...</p>
+
+</body>
+
+</html>

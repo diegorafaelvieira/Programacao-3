@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="UTF-8">
+	<script>
+		var pessoa = new Object();
+		pessoa.nome = "Maria";
+		pessoa.idade = 50;
+		pessoa.profissao = "Programadora";
+		pessoa.dataNasc = "01/08/1969"
+
+		pessoa.imprimir = function () {
+			console.log(this.nome + " tem " + this.idade + " anos e sua profissão é ser uma "+ this.profissao)
+		};
+
+		pessoa.aniversario = function() {
+			console.log("A data de nascimento de "+ this.nome +" é no dia: "+ this.dataNasc)
+		}
+
+		pessoa.imprimir();
+		pessoa.aniversario();
+	</script>
+</head>
+<body>
+	<h1>Exemplo de objeto com método</h1>
+	<p>Veja o resultado com no Console.</p>
+</body>
+</html>

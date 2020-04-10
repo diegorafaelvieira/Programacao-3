@@ -1,0 +1,30 @@
+Tarefa 1 (Aula 4 - EAD)
+
+Antes de realizar a tarefa, leia o PDF referente a Aula 04.
+
+Tarefa 1:
+(a) Pesquise a propriedade clear com os valores right e left.
+(b) Construa exemplos de uso para ambos valores demonstrando o seu funcionamento.
+(c) Coloque os exemplos em um ZIP e faça upload no Moodle.
+
+
+
+
+Tarefa 2 (Aula 04 - EAD)
+
+Antes de realizar a tarefa, leia o PDF referente a Aula 04.
+
+Tarefa 2:
+(a) No Exemplo 5, a propriedade overflow possui o valor hidden.
+Quais outros valores essa propridade pode assumir?
+(b) Crie um exemplo diferente para cada possível valor.
+(c) Coloque os exemplos em um ZIP e faça upload no Moodle.
+
+
+
+
+
+PROG1 EAD: https://developer.mozilla.org/pt-BR/docs/Web/CSS/clear
+19:30
+
+PROG2 EAD: https://developer.mozilla.org/pt-BR/docs/Web/CSS/overflow

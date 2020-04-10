@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="UTF-8">
+	<style>
+	input[type=text], input[type=number], select {
+	    width: 100%;
+	    padding: 12px 20px 12px 20px;
+	    margin: 10px 0px 10px 0px;
+	    border: 1px solid #CCCCCC;
+	    box-sizing: border-box;
+	}
+
+	/*
+		O box-sizing inclui padding e borda no tamanho total do elemento
+		Deste modo, o elemento nao sai para fora da caixa definida pelo
+		elemento mais externo que o contem.
+	*/
+
+	input[type=submit] {
+	    width: 100%;
+	    background-color: #CCAA55;
+	    color: white;
+	    padding: 14px 20px;
+	    margin: 8px 0;
+	    border: none;
+	    box-sizing: border-box;
+	}
+
+	input[type=submit]:hover {
+	    background-color: #AA7711;
+	}
+
+	div {
+	    background-color: #EEEEEE;
+	    padding: 40px;
+	}
+	</style>
+
+	<script>
+		function verifica() {
+			var nome = document.getElementById("pnome").value;
+			if(nome == null || nome == "") {
+				alert("O nome é obrigatório!");
+				return false;
+			}
+
+			var idade = document.getElementById("idade").value;
+			if (isNaN(idade) || idade < 1) {
+			    alert("A idade é obrigatória!");
+				return false;
+			}
+
+			return true;
+		}
+	</script>
+</head>
+<body>
+	<h1>Exemplo de verificação de formulários</h1>
+	<form id="f1" action="processa.php" onsubmit="return verifica();">
+		<label for="pnome">Nome</label>
+	    <input type="text" id="pnome" name="nomeCriatura">
+		<label for="sobrenome">Sobrenome</label>
+	    <input type="text" id="sobrenome" name="sobrenomeCriatura">
+		<label for="idade">Idade</label>
+	    <input type="number" id="idade" name="idadeCriatura">
+
+	    <label for="estado">Estado</label>
+	    <select id="estado" name="estadoCriatura">
+	      <option value="rs">Rio Grande do Sul</option>
+	      <option value="sc">Santa Catarina</option>
+	      <option value="pr">Parana</option>
+	    </select>
+	    <input type="submit" value="Enviar">
+	</form>
+</body>
+</html>

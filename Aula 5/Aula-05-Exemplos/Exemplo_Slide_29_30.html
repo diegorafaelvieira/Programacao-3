@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<p>Percorrendo um array:</p>
+	<p id="minhaLista"></p>
+
+<script>
+	var frutas = ["Pera", "Banana", "Manga","Morango","Amora"];
+	frutas.pop();			// Remove o ultimo
+	frutas.shift();			// Remove o primeiro
+	frutas.push("Tomate");	// Insere no final
+	frutas.unshift("Uva");	// Insere no inicio
+
+    var texto = "<ul>";
+    for (var index = 0; index < frutas.length; index++) {
+       	texto += "<li>" + frutas[index] + "</li>";
+    }
+    texto += "</ul>";
+
+    document.getElementById("minhaLista").innerHTML = texto;	
+</script>
+
+</body>
+</html>

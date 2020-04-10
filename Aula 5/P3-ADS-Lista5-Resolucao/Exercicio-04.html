@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h1>Voto</h1>
+	<form>
+		<input name="idade" type="number" value="18" onkeyup="voto(this.value)">
+	</form>
+	<p id="resultado">Obrigatorio</p>
+
+<script>
+function voto(idade) {
+	if(idade<16) {
+		document.getElementById("resultado").innerHTML = "Proibido";
+	} else if((idade < 18) || (idade >= 70)){
+		document.getElementById("resultado").innerHTML = "Facultativo";
+	} else {
+		document.getElementById("resultado").innerHTML = "Obrigatorio";
+	}
+}
+</script>
+
+</body>
+</html>

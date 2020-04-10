@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="UTF-8">
+	<script>
+		function jedi(n, s, p) {
+			this.nome = n;
+			this.sobrenome = s;
+			this.poder = p;
+		}
+		/* Aqui TECNICA que simula um construtor através de uma FUNÇÃO */
+		var j1 = new jedi("Obi-Wan", "Kenobi", 90);
+		var j2 = new jedi("Aayla", "Secura", 88);
+
+		console.log(j1.nome);
+		console.log(j1.sobrenome);
+		console.log(j1.poder);
+
+		console.log(j2.nome);
+		console.log(j2.sobrenome);
+		console.log(j2.poder);
+
+	</script>
+</head>
+<body>
+	<h1>Exemplo usando função construtora</h1>
+	<p>Veja o resultado com no Console.</p>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    < <title>Exercicio Idade</title>
+
+</head>
+
+<body>
+    <script>
+
+        function calcula() {
+
+            var dias = 400;
+            var anos = Math.floor(dias/365);
+            console.log(anos);
+
+            var resto = dias % 365;
+            var meses = Math.floor(resto/30);
+            console.log(meses);
+
+            var diasResto = resto % 30;
+            console.log(diasResto);
+
+        }
+
+        calcula();
+
+    </script>
+
+</body>
+
+</html>

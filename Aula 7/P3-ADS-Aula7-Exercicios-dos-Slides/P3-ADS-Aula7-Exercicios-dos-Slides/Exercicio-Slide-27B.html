@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="UTF-8">
+	<script>
+		var c = {
+			valor: 2000,
+			item: "Laptop Dell",
+			comprador: {
+				nome: "Maria",
+				sobrenome: "Silva",
+				fone: "3333-4444"
+			},
+			vendedor: {
+				nome: "Joao",
+				sobrenome: "Neves",
+				fone: "3333-4444"
+			},
+			
+			imprimir: function() {
+				console.log(this.valor);
+				console.log(this.item);
+				console.log(this.comprador.nome + " " + this.comprador.sobrenome + " Fone: " + this.comprador.fone);
+				console.log(this.vendedor.nome + " " + this.vendedor.sobrenome + " Fone: " + this.vendedor.fone);
+			}
+		};
+		
+		
+		c.imprimir();
+		
+		
+	</script>
+</head>
+<body>
+	<h1>Exercicio Slide 27B</h1>
+	<p>Veja o resultado com no Console.</p>
+</body>
+</html>

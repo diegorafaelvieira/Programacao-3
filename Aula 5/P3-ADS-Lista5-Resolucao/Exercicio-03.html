@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+	<p>Clique no botao para iniciar.</p>
+	<form>
+		<input type="number" onkeyup="calculoLeao(this.value)">
+	</form>
+	<p id="resultado"></p>
+<script>
+function calculoLeao(v) {
+	
+    if (v != null) {
+		if(! isNaN(v) ) {
+			
+			impostos = 0;
+			
+			if(v > 1787.77) {
+				if(v < 2679.29)
+					impostos = 7.5;
+				else if(v < 3572.43)
+					impostos = 15;
+				else if(v < 4463.81)
+					impostos = 22.5;
+				else impostos = 27.5;
+			}
+			
+        	document.getElementById("resultado").innerHTML = "A sua aliquota eh " + impostos;
+		}
+    } else
+		document.getElementById("resultado").innerHTML = "Entrada invalida.";
+}
+</script>
+
+</body>
+</html>

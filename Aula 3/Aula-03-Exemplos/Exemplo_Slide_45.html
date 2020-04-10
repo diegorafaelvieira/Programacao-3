@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px 12px 20px;
+    margin: 10px 0px 10px 0px;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+}
+
+/* 
+	O box-sizing inclui padding e borda no tamanho total do elemento 
+	Deste modo, o elemento nao sai para fora da caixa definida pelo
+	elemento mais externo que o contem.
+*/
+
+input[type=submit] {
+    width: 100%;
+    background-color: #ccaa55;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+input[type=submit]:hover {
+    background-color: #aa7711;
+}
+
+div {
+    background-color: #eeeeee;
+    padding: 40px;
+}
+</style>
+<body>
+
+<h3>Formulario</h3>
+
+<div>
+  <form action="resultado.php">
+	
+    <label for="pnome">Nome</label>
+    <input type="text" id="pnome" name="nomeCriatura">
+
+    <label for="estado">Estado</label>
+    <select id="estado" name="estadoCriatura">
+      <option value="rs">Rio Grande do Sul</option>
+      <option value="sc">Santa Catarina</option>
+      <option value="pr">Parana</option>
+    </select>
+  
+    <input type="submit" value="Enviar">
+  </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!--
+    Crie uma função que receba um objeto e imprima as propriedades usando um loop for.
+    Teste a sua função com os objetos do exercício anterior.
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Exercicio 2</title>
+
+    <script>
+        function mostrarObjetoExA() {
+            var h1 = { nome: "Feliz", estado: "RS", pais: "Brasil", nroHab: 20000 };
+            /* FOR para percorrer propriedades*/
+            for (a in h1) {
+                console.log(a + " - " + h1[a]);
+            }
+        }
+
+
+        function mostrarObjetoExB() {
+            var h1 = { nomePaciente: "Pedro de Pacas", nomeMedico: "Dr Chapatin", crm: "CRM-1234", hora: "22:22" };
+            /* FOR para percorrer propriedades*/
+            for (b in h1) {
+                console.log(b + " - " + h1[b]);
+            }
+        }
+
+        function mostrarObjetoExC() {
+            var h1 = {nome: "Olivio", sobrenome: "Dutra", sigla: "PT",numero: 13 , estado: "RS" };
+            for (c in h1) {
+               console.log(c + " - " + h1[c]);
+            }
+        }
+
+        function mostrarObjetoExD() {
+            var h1 = {codigo: "D7", numComp: 30, arCond: true, projetor: true};
+            for (d in h1) {
+               console.log(d + " - " + h1[d]);
+            }
+        }
+
+
+    </script>
+</head>
+
+<body onload="mostrarObjetoExA(), mostrarObjetoExB(), mostrarObjetoExC(), mostrarObjetoExD()">
+    <h1>Exemplo de uso de laço para percorrer objeto</h1>
+    <h2>VER NO CONSOLE F12</h2>
+</body>
+
+</html>

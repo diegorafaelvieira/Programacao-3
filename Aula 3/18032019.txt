@@ -1,0 +1,26 @@
+25/03 Aula EAD
+
+1ª Avaliação 22/04 -> HTML/CSS/JS
+
+
+CSS
+id -> #
+classe -> .
+
+ordem CSS
+1- inline 
+2- externo e interno (depende a ordem / o que vale é o último)
+3 - default
+
+comentário CSS
+/*  Comentario   */
+
+
+sem repetição no fundo
+
+no repeat
+
+
+BORDAS
+MARGIN -> não conseguimos mudar a cor
+

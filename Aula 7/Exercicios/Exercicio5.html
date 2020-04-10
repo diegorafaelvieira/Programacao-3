@@ -1,0 +1,43 @@
+<!--
+    Crie um novo objeto circulo especificando um construtor da forma circulo(x,y,z) 
+    onde x e y são as coordenadas cartesianas do círculo e r é o seu raio.
+    Use o construtor para criar dois objetos c1 e c2 e imprimir seus valores da forma mostrada
+    na figura abaixo.
+-->
+
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 5</title>
+</head>
+
+<body>
+
+    <script>
+
+        function circulo(x, y, r) {
+            this.cartesiano1 = x;
+            this.cartesiano2 = y;
+            this.raio = r;
+
+        }
+
+        var c1 = new circulo(2, 2, 5);
+        var c2 = new circulo(1, 2, 4);
+
+        document.getElementById("c1").innerHTML = "c1:raio = " + c1.raio + "(" + c1.cartesiano1 + "," + c1.cartesiano2+ ")";
+
+        //console.log("c1:raio = " + c1.raio + "(" + c1.cartesiano1 + "," + c1.cartesiano2 + ")");
+        //console.log("c2:raio = " + c2.raio + "(" + c2.cartesiano1 + "," + c2.cartesiano2 + ")");
+        
+
+    </script>
+
+    <h1>Circulos</h1>
+    <p id="c1"></p>
+ 
+</body>
+
+</html>

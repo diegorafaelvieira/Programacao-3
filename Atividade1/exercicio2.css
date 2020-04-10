@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+}
+
+table, th, td {
+    border: 2px solid rgb(56, 56, 56);
+    border-collapse: collapse;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+}
+
+td.derrota {
+    background-color: red;
+ 
+}
+
+td.empate {
+    background-color: yellow;
+
+}
+
+td.vitoria {
+    background-color: green;
+
+}
+
+td.pontos {
+    background-color: blue;
+
+}
+
+th {
+    background-color: grey;
+    color:white;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<p>Este exemplo chama uma funcao que mostra o uso do while.</p>
+	<p id="meuParagrafo"></p>
+
+<script>
+	function testaWhile() {
+		var i = 1;
+		var text = "";
+
+		while (i < 10) {
+		    text += " " + i;
+		    i++;
+		}
+
+		do {
+			text += " " + i;
+			i--;
+		} while (i > 0);
+				
+		return text;
+	}
+
+	document.getElementById("meuParagrafo").innerHTML = testaWhile();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="UTF-8">
+	<script>
+		function calcula(f) {
+		
+		console.log("oiii" + f);
+			// 9km/l 3 reais/l = 8*3 (preciso 3 reais para fazer 8km)
+			//   9/3 = 3 kms/real
+			// 10km/l 4 reais/l = 10*4 (preciso 4 reais para fazer 10km)
+			//   10 / 4 = 2.5 kms/real
+			// Logo, eu rodo uma maior distancia com a gasolina
+			
+			var consumoEtanol = Number(document.getElementById("consumoEtanol").value);
+			var precoEtanol = Number(document.getElementById("precoEtanol").value);
+			var cbEtanol = consumoEtanol / precoEtanol;
+			
+			
+			var consumoGasol = Number(document.getElementById("consumoGasol").value);
+			var precoGasol = Number(document.getElementById("precoGasol").value);
+			var cbGasol = consumoGasol / precoGasol;
+		
+			var r = "";
+			if(cbEtanol == cbGasol) {
+				r = "Indiferente";
+			} else if(cbEtanol > cbGasol) {
+				r = "Etanol melhor que gasolina.";			
+			} else {
+				r = "Gasolina melhor que etanol.";
+			}
+			
+			document.getElementById("resultado").innerHTML = r;
+		}
+	</script>
+</head>
+<body>
+	<h1>Exercicio 3</h1>
+
+		Consumo do Carro com Etanol: <input type="number" step=".01" id="consumoEtanol"><br>
+		Consumo do Carro com Gasolina: <input type="number" step=".01" id="consumoGasol"><br>
+		Valor Etanol: <input type="number" id="precoEtanol" step=".01"><br>
+		Valor Gasolina: <input type="number" id="precoGasol"step=".01"><br>
+		<button onclick="calcula()">OK</button>
+
+		<p id="resultado"></p>
+</body>
+</html>

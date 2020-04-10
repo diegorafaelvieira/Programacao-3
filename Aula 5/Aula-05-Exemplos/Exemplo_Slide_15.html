@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JavaScript</title>
+		<meta charset="UTF-8">
+	</head>
+<body>
+	<button type="button" onclick="minhaFuncao()">Mostrar operações com String!</button>
+	<script>
+		function minhaFuncao() {
+						
+			var nome = "Feliz";
+
+			console.log(nome.charAt(2)); 				// l
+			console.log(nome.concat("!")); 				// Feliz!
+			console.log(nome.indexOf("z")); 			// 4
+			console.log(nome.replace("liz","io"));		// Feio
+
+			var nomes = "Pedro;Maria;Lucas;Juliana";
+			var nomesArray = nomes.split(";");
+			console.log(nomesArray[0]);
+		}
+	</script>
+</body>
+</html> 

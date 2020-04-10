@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+<script>
+	function mudarImagem() {
+    	var imagem = document.getElementById('minhaImage');
+
+		/* match retorna null se a string NAO for encontrada */
+    	if (imagem.src.match("on")) {
+        	imagem.src = "off.png";
+    	} else {
+        	imagem.src = "on.png";
+    	}
+	}
+</script>
+
+	<img id="minhaImage" onclick="mudarImagem()" src="off.png">
+	<p>Clique no interruptor.</p>
+</body>
+</html>
+

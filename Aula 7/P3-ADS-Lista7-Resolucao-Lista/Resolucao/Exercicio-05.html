@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Circulos</title>	
+	<meta charset="UTF-8">
+	<script>
+		function Circulo(x, y, r) { // função "construtora"
+			this.x = x; // definição das propriedades deste objeto
+			this.y = y; // a referência this é ponteiro para o próprio objeto 
+			this.r = r;
+     	}
+
+		function criaCirculos() {
+			c1 = new Circulo(2,2,5); // uso da função construtora 
+			c2 = new Circulo(0,0,4); // para criar dois circulos
+
+			c2.x = 1; // definicao de propriedades ...usando o operador “.” 
+			c2["y"] = 2; //...usando o vetor associativo
+
+			var texto = "c1: raio=" + c1.r + " (" + c1.x + "," + c1.y + ") <br/>" +
+						"c1: raio=" + c2.r + " (" + c2.x + "," + c2.y + ")";
+
+			document.getElementById("saida").innerHTML = texto;
+		}
+	</script>
+</head>
+<body onload="criaCirculos()">
+<h1>Circulos</h1>
+<p id="saida"></p>
+</body>
+</html>

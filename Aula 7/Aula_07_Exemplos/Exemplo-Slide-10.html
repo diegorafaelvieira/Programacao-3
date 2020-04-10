@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="UTF-8">
+	<script>
+		function encontra() {
+		    var i, mtemp = 0;
+		    for (i = 0; i < arguments.length; i++){
+		        if (arguments[i] > mtemp) {
+		           mtemp = arguments[i];
+		        }
+		    }
+		    return mtemp;
+		}
+
+		x = encontra(1, 123, 500, 115, 44, 88);
+		console.log(x);
+	</script>
+</head>
+<body>
+	<h1>Exemplo de função sem argumentos declarados</h1>
+	<p>Veja o resultado com no Console.</p>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="UTF-8">
+	<script>
+	function menorDiferenca(a) {
+		var d = Number.MAX_VALUE;
+
+		for (let i = 0; i < a.length; i++) {
+			for (let j = 0; j < a.length; j++) {
+				if(i != j) {
+					var diferenca = Math.abs(a[i] - a[j]);
+					if(diferenca < d) {
+						d = diferenca;
+					}
+				}
+			}
+		}
+
+		return d;
+	}
+
+	var a1 = [-10,10,15,35,70,100];
+	var r = menorDiferenca(a1);
+	console.log("Menor Diferenca = " + r);
+	</script>
+</head>
+<body>
+	<h1>Exercicio 1(b)</h1>
+	<p>Veja o resultado com no Console.</p>
+</body>
+</html>

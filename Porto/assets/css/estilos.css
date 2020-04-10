@@ -1,0 +1,241 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #39aae1;
+}
+
+section {
+	display: flex;
+    justify-content: center;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	background-color:  #39aae1;
+    color: white;
+    text-align: center;
+}
+
+footer a {
+	color: white;
+}
+
+nav ul,
+nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+nav .active a,
+nav a:hover {
+    background-color: white;
+    color: #39aae1;
+}
+/* VER COR BOTAO*/
+input #btnEntrar {
+    background-color: green;
+}
+
+.containerLogin {
+	display: flex;
+	text-align:center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* UM EM CADA LADO */
+    width: 990px;
+}
+
+.logo {
+    display: center;
+}
+
+.login {
+	color: #727272;
+    align-items: center;
+}
+
+.cadastrarUsuario {
+   color: #727272;
+   align-items: center;
+   display: center;
+   height: 400px;
+   
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+
+#cadastro {
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+}
+
+#cadastrarUsuario {
+   display: flex;
+   justify-content: center;
+   background-position: center;
+   background-size: cover;
+   height: auto; 
+}
+
+#listasTransportador {
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+}
+
+#listasOperador {
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+}
+
+#listasContainer {
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    height: auto; 
+}
+
+#listasCarregamentos {
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    height: auto;  
+}
+
+
+#remover {
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+}
+
+#carregar {
+  display: flex;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  height: auto;  
+}
+
+#descarregar {
+ display: flex;
+ justify-content: center;
+ background-position: center;
+ background-size: cover;
+ height: auto;   
+}
+
+#nome {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: white; 
+}
+
+.column {
+    flex-direction: column;
+}
+
+.cadastro_options,
+.carregar_options {
+    height: 300px;
+    display: flex;  /* VER A TABLE LISTAGEM AQUI */
+}
+
+.cadastro_options a,
+.carregar_options a {
+    display: inline-block;
+    border: 1px solid white;
+    padding: 5px;
+    color:white;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+
+.cadastroCaminhao,
+.cadastroNavio,
+.todosVeiculos,
+.meusVeiculos,
+.removerVeiculos,
+.carregarNavio,
+.carregarCaminhao,
+.descarregarNavio,
+.descarregarCaminhao,
+.filaNavios,
+.filaCaminhoes,
+.filaCarregamentosNavio,
+.filaCarregamentosCaminhao,
+.filaContainers {
+    flex: 1;
+    padding: 5px;
+    color: #727272;
+}
+
+
+
+/* AQUI BARRA DE CARREGAMENTO PADRÃO YOUTUBE VER JS TAMBÉM */
+/* This is a compiled file, you should be editing the file in the templates directory */
+.pace {
+    -webkit-pointer-events: none;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .pace-inactive {
+    display: none;
+  }
+  
+  .pace .pace-progress {
+    background:black;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 4px;
+  }
+  

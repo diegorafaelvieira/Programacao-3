@@ -1,0 +1,73 @@
+<!--
+Construa três objetos, cada um deles usando um modo de construção diferente.
+ –Os objetos devem ter pelo menos três propriedades (atributos).
+ –Para testar os seus objetos, imprima no Console os atributos dos mesmos.
+ 
+ 
+ ●Construa um objeto que represente um Contrato de compra e venda.
+  Esse objeto deve conter propriedades de um contrato. O comprador e o vendedor devem ser representados por objetos
+que contém dados como nome, sobrenome, etc. 
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Exercicio Slide 22</title>
+
+</head>
+
+<body>
+
+    <script>
+        // Exemplo do slide 17
+        var game = { modelo: "Mega Drive", marca: "SEGA", mascote: "Sonic" };
+
+        console.log(game.modelo + " " + game.marca + " " + game.mascote);
+
+        // Exemplo do slide 18
+        var instrumento = new Object();
+        instrumento.nome = "Guitarra";
+        instrumento.marca = "Fender";
+        instrumento.cor = "Verde";
+
+        console.log(instrumento.nome);
+        console.log(instrumento.marca);
+        console.log(instrumento.cor);
+
+        // Exemplo slide 20
+        function banda(n, d, a) {
+            this.nome = n;
+            this.disco = d;
+            this.ano = a;
+        }
+
+        var b1 = new banda("The Who", "Who's Next", 1971);
+
+		console.log(b1.nome);
+		console.log(b1.disco);
+		console.log(b1.ano);
+
+        // CONTRATO
+        function contrato (vNome,vSobre,cNome,cSobre,val) {
+            this.vendedorNome = vNome;
+            this.vendedorSobrenome = vSobre;
+            this.compradorNome = cNome;
+            this.compradorSobrenome = cSobre;
+            this.valor = val;
+        }
+
+        var cont1 = new contrato("Diego","Vieira","Mateus","Schwede",1500000)
+
+        console.log(cont1.vendedorNome + " " +cont1.vendedorSobrenome );
+       // console.log(cont1.vendedorSobrenome);
+        console.log(cont1.compradorNome + " " +cont1.compradorSobrenome);
+       // console.log(cont1.compradorSobrenome);
+        console.log("Valor da venda R$ "+cont1.valor);
+    </script>
+
+</body>
+
+</html>

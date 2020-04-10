@@ -1,0 +1,41 @@
+<!--
+    Construa uma página HTML contendo uma imagem e um paragráfo com id igual a "saida".
+    Adicione um script que sempre que o mouse passe sobre a imagem, seja adicionada ao 
+    parágrafo "saida" a seguinte frase: "O mouse passou novamente sobre a imagem".
+-->
+
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 3</title>
+
+</head>
+
+<body>
+    <img src="mussum.jpg" height="200" width="200" onmouseover="mouseSobre()">
+
+
+    <script>
+        function mouseSobre() {
+            document.getElementById("saida").innerHTML = "O mouse passou novamente sobre a imagem";
+        }
+
+        function mouseFora() {
+            document.getElementById("saida").innerHTML = "Mussum Ipsum, cacilds vidis litro abertis. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Quem num gosta di mim que vai caçá sua turmis! Não sou faixa preta cumpadi, sou preto inteiris, inteiris. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. ";
+        }
+
+    </script>
+
+    <p id="saida" onmouseout="mouseFora()">
+        Mussum Ipsum, cacilds vidis litro abertis. Nullam volutpat risus nec leo commodo, ut interdum
+        diam laoreet. Sed non consequat odio. Quem num gosta di mim que vai caçá sua turmis!
+        Não sou faixa preta cumpadi, sou preto inteiris, inteiris. Praesent malesuada urna
+        nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus.
+    </p>
+    <h1>Evento com o mouse sobre a imagem</h1>
+
+</body>
+
+</html>

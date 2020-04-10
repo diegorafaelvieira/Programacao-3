@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<p>Percorrendo um array:</p>
+	<button onclick="funcaoForCompleto()">Executar (for completo, array de frutas)</button>
+	<p id="listaFrutas"></p>
+	
+	<button onclick="funcaoForResumido()">Executar (for resumido, array de carros)</button>
+	<p id="listaCarros"></p>
+
+<script>
+	function funcaoForCompleto() {
+
+		var frutas = ["Pera", "Banana", "Manga"];
+		var texto = "<ul>";
+ 
+    	for (var index = 0; index < frutas.length; index++) {
+        	texto += "<li>" + frutas[index] + "</li>";
+    	}
+
+    	texto += "</ul>";
+
+    	document.getElementById("listaFrutas").innerHTML = texto;	
+	}
+	
+	
+	function funcaoForResumido() {
+
+		var carros = ["Vectra", "Jetta", "Corolla"];
+		var texto = "<ol>";
+		
+		/* FOREACH NOVO */
+		carros.forEach(element =>  {
+			texto += "<li>" + element + "</li>"
+		});
+ 
+    	for (var index in carros) {
+        	texto += "<li>" + carros[index] + "</li>";
+    	}
+
+    	texto += "</ol>";
+
+    	document.getElementById("listaCarros").innerHTML = texto;	
+	}
+	
+</script>
+
+</body>
+</html>

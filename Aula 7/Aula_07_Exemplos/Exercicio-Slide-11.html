@@ -1,0 +1,43 @@
+<!--
+Considere uma função que recebe 3 parâmetros,a, b e c, que correspondem às medidas dos lados de um triângulo.
+A sua função deve determinar se um triângulo é equilátero, isósceles ou escaleno, ou se a figura geométrica não é
+um triângulo
+
+Triângulo Isósceles. Tem dois lados iguais e um diferente. O lado desigual é, em geral, utilizado como referência de base.
+Triângulo Equilátero. Todos os lados são iguais.
+Triângulo Escaleno. Nenhum dos lados é igual.
+-->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Exercicio Slide 11 Triângulo</title>
+
+</head>
+
+<body>
+    <script>
+
+        var triangulo = function (a, b, c) {
+            if ((a + b < c) || (a + c < b) || (b + c < a)) {
+                return console.log("Não eh um triângulo!")
+            } else if ((a == b) && (b == c)) {
+                return console.log("Equilátero");
+            } else if ((a != b) && (b != c) && (a != c)) {
+                return console.log("Escaleno");
+            } else {
+                return console.log("Isósceles");
+            }
+
+        }
+
+        var x = triangulo(3, 5, 3);
+
+    </script>
+</body>
+
+</html>

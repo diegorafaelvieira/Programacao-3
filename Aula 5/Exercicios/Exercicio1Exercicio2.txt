@@ -1,0 +1,17 @@
+1. Quais das seguintes declarações são válidas?
+Explique por que cada uma é ou não válida.
+Se um item for inválido, como corrigí-lo?
+
+a. my_name = "Samuel";  var my_name = "Samuel";
+b. var how many = 25;   var how_many = 25;
+c. var 1address = "Rua Mauricio Cardoso"; var address1 = "Rua Mauricio Cardoso";
+d. var city = "Porto Alegre";
+
+
+2. Para cada uma das instruções a seguir, qual valor será armazenado na variável x?
+var x = 2;	x = 2
+x = x + 2;	x = 4
+x = x * 10;	x = 40
+x = x + "20";	x = 4020
+x = "Terra";	x = Terra
+

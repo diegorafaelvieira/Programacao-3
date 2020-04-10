@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h1>Conversor de Celsius para Fahrenheit</h1>
+	<form>
+		<input type="button" value="Converter" onclick="converte()">
+	</form>
+	<p id="resultado">
+		
+	</p>
+<script>
+function converte() {
+	
+	var table = "<table border=1>"
+	
+	var tc = 0;
+	while(tc <= 100) {
+		var tf = (tc * 1.8) + 32;
+		table += "<tr><td>";
+		table += tc;
+		table += "</td><td>";
+		table += tf.toFixed(2);
+		table += "</td></tr>";
+		tc++;
+	}
+	table += "</table>"
+	
+	document.getElementById("resultado").innerHTML = table;
+}
+</script>
+
+</body>
+</html>

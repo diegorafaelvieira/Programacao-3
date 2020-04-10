@@ -1,0 +1,37 @@
+MYSQL -> + -> nome: LOCAL
+
+não utilizar exemplos -> mysql_*
+
+slide 6 -> 1 maneira de fazer um select
+
+slide 7 -> 2 maneira
+
+Opções de indexação
+PDO::FETCH_ASSOC  -> STRING
+
+PDO::FETCH_NUM  -> numérica
+
+
+FAZER tratamento na query SQL
+
+CONSULTA -> é por query
+
+INSERÇÃO -> é por exec
+
+LIDAR COM ERROS
+PDO::ERRMODE_SILENT  não avisa nada
+
+PDO::ERRMODE_WARNING avisa 
+
+PDO::ERRMODE_EXCEPTION tratar erros com TRY e CATCH
+
+Próxima aula -> prepared statements  (preencher na consulta depois)
+
+
+]
+
+
+
+
+ 
+

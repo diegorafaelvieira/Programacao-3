@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="UTF-8">
+	
+</head>
+<body>
+	<h1>Exercicio 1(c)</h1>
+	<div id="tabela"></div>
+
+
+	<!--
+		Se voce colocar o script dentro do head, no inicio do arquivo,
+		o script nao funcionara pois a div "tabela" nao sera encontrada.
+	-->
+	<script>
+		function tabula(a) {
+			var t = "<table>";
+			for (let i = 0; i < a.length; i++) {
+				t += "<tr>";
+				for (let j = 0; j < a[i].length; j++) {
+					t += "<td>";
+					t += a[i][j];
+					t += "</td>";
+				}
+				t += "</tr>";
+			}
+			t += "</table>";
+			document.getElementById("tabela").innerHTML = t;
+		}
+	
+		tabula([[10,20,30],[40,50,60],[70,80,90]]);
+	</script>
+</body>
+</html>
